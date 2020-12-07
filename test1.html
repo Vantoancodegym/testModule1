@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>test1</title>
+</head>
+<body>
+<script>
+    let str=prompt('Nhập chuỗi điểm cách nhau bằng dấu (;)');
+    let myArr= str.split(';');
+    function findMax(arr){
+        let max=parseFloat(arr[0]);
+        for (let i=0;i< arr.length;i++){
+            if (parseFloat(arr[i])>max){
+                max=parseFloat(arr[i]);
+            }
+        }
+        return max;
+    }
+    document.write(findMax(myArr));
+</script>
+</body>
+</html>
