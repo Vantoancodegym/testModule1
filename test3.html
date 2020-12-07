@@ -11,15 +11,15 @@
     function  isFibonacci(x){
         if (x<0){
             return false;
-        }else if(x==0){
+        }else if(x===0){
             return true;
         }else{
-        let f = 1;
+        let f = f0+f1;
         while (f<=x) {
             f = f0 + f1;
             f0 = f1;
             f1 = f;
-            if (f == x) {
+            if (f === x) {
                 return true;
             }
         } return false;

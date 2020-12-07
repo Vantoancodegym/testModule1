@@ -7,7 +7,7 @@
 <body>
 <canvas id="myCanvas" width="400px" height="400px" style="border: 1px solid black"></canvas>
 <script>
-    class Cirle {
+    class Circle {
         constructor(x,y,radius,color) {
             this.pos_x=x;
             this.pos_y=y;
@@ -22,7 +22,7 @@
             ctx.fill();
         }
     }
-    let circle = new Cirle(10,10,100,'#000000');
+    let circle = new Circle(10,10,100,'#000000');
     let canvas = document.getElementById('myCanvas');
     circle.render(canvas);
 
